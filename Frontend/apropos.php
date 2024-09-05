@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentation</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <div>
@@ -20,16 +21,5 @@
             <p>Veniam dolorem fugit cupiditate temporibus. Beatae, adipisci minima reiciendis exercitationem ab magni voluptatum accusamus nam sequi laboriosam veniam corporis facere sunt iure quas veritatis officiis! Similique ab voluptas natus doloremque.</p>
         </div>
     </div>
-
-    <style>
-        #page-header{
-            background-image: url('../assets/images/slide2.jpg');
-            min-height: 120px;
-            vertical-align: center;
-            display: flex;
-            text-align: center;
-        }
-        
-    </style>
 </body>
 </html>
