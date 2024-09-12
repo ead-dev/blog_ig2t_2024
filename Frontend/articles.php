@@ -10,7 +10,11 @@
 <body>
     <div>
         <?php include('../includes/menu.php'); ?>
-        <?php require('../data/articles.php'); ?>
+        <?php
+            //require('../data/articles.php');
+            require('../data/connexion.php');
+            $articles = getArticles();
+        ?>
     </div>
     <div id="page-header">
             <div style="width: 500px; margin:40px auto;">
@@ -22,8 +26,8 @@
             <?php foreach($articles as $elt): ?>
                 <li class="list-group-item">
                     <div>
-                        <h5><a href="/blog/Frontend/article.php?id=<?=  $elt['id'] ?>"><?= $elt['titre'] ?></a></h5>
-                        <p><?= $elt['description'] ?></p>
+                        <h5><a href="/blog/Frontend/article.php?id=<?=  $elt['id'] ?>"><?= $elt['name'] ?></a></h5>
+                        <p><?= $elt['body'] ?></p>
                     </div>
                 </li>
             <?php endforeach ?>    

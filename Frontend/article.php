@@ -13,12 +13,7 @@
         <?php require('../data/articles.php'); ?>
         <?php 
             $id = $_GET['id'];
-            $elt = null;
-            foreach($articles as $article){
-                if($article['id'] == $id ){
-                    $elt = $article;
-                }
-            }
+            $elt = showArticle($id);
          ?>
     </div>
     <div id="page-header">
